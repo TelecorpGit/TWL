@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="thirty_dp">30dp</dimen>
+    <dimen name="ten_dp">10dp</dimen>
+    <dimen name="twenty_sp">20sp</dimen>
+    <dimen name="twenty_dp">20dp</dimen>
+    <dimen name="sixteen_sp">16sp</dimen>
+
+
+    <!--layout-->
+    <!--logo in Login-->
+    <dimen name="logo_width">190dp</dimen>
+    <dimen name="logo_height">190dp</dimen>
+    <!--button in Login-->
+    <dimen name="icon_width">35dp</dimen>
+    <dimen name="icon_height">35dp</dimen>
+    <!--button in Logout-->
+    <dimen name="btn_cancel_width">60dp</dimen>
+    <dimen name="btn_cancel_height">60dp</dimen>
+    <dimen name="btn_logout_width">50dp</dimen>
+    <dimen name="btn_logout_height">50dp</dimen>
+
+    <!--layout_land-->
+    <!--logo in Login-->
+    <dimen name="logo_width_land">140dp</dimen>
+    <dimen name="logo_height_land">140dp</dimen>
+    <!--button in Login-->
+    <dimen name="icon_width_land">25dp</dimen>
+    <dimen name="icon_height_land">25dp</dimen>
+    <!--button in Logout-->
+    <dimen name="btn_cancel_width_land">30dp</dimen>
+    <dimen name="btn_cancel_height_land">30dp</dimen>
+    <dimen name="btn_logout_width_land">20dp</dimen>
+    <dimen name="btn_logout_height_land">20dp</dimen>
+
+    <!--layout_sw480dp-->
+    <!--logo in Login-->
+    <dimen name="logo_width_sw480dp">230dp</dimen>
+    <dimen name="logo_height_sw480dp">230dp</dimen>
+    <!--button in Login-->
+    <dimen name="icon_width_sw480dp">45dp</dimen>
+    <dimen name="icon_height_sw480dp">45dp</dimen>
+    <!--button in Logout-->
+    <dimen name="btn_cancel_width_sw480dp">60dp</dimen>
+    <dimen name="btn_cancel_height_sw480dp">60dp</dimen>
+    <dimen name="btn_logout_width_sw480dp">50dp</dimen>
+    <dimen name="btn_logout_height_sw480dp">50dp</dimen>
+
+    <!--layout_sw480dp_land-->
+    <!--logo in Login-->
+    <dimen name="logo_width_sw480dp_land">190dp</dimen>
+    <dimen name="logo_height_sw480dp_land">150dp</dimen>
+    <!--button in Login-->
+    <dimen name="icon_width_sw480dp_land">35dp</dimen>
+    <dimen name="icon_height_sw480dp_land">35dp</dimen>
+    <!--button in Logout-->
+    <dimen name="btn_cancel_width_sw480dp_land">70dp</dimen>
+    <dimen name="btn_cancel_height_sw480dp_land">70dp</dimen>
+    <dimen name="btn_logout_width_sw480dp_land">60dp</dimen>
+    <dimen name="btn_logout_height_sw480dp_land">60dp</dimen>
+
+    <!--layout_sw600dp-->
+    <!--logo in Login-->
+    <dimen name="logo_width_sw600dp">320dp</dimen>
+    <dimen name="logo_height_sw600dp">320dp</dimen>
+    <!--button in Login-->
+    <dimen name="icon_width_sw600dp">50dp</dimen>
+    <dimen name="icon_height_sw600dp">50dp</dimen>
+    <!--button in Logout-->
+    <dimen name="btn_cancel_width_sw600dp">60dp</dimen>
+    <dimen name="btn_cancel_height_sw600dp">60dp</dimen>
+    <dimen name="btn_logout_width_sw600dp">50dp</dimen>
+    <dimen name="btn_logout_height_sw600dp">50dp</dimen>
+
+    <!--layout_sw600dp_land-->
+    <!--logo in Login-->
+    <dimen name="logo_width_sw600dp_land">210dp</dimen>
+    <dimen name="logo_height_sw600dp_land">180dp</dimen>
+    <!--button in Login-->
+    <dimen name="icon_width_sw600dp_land">45dp</dimen>
+    <dimen name="icon_height_sw600dp_land">45dp</dimen>
+    <!--button in Logout-->
+    <dimen name="btn_cancel_width_sw600dp_land">90dp</dimen>
+    <dimen name="btn_cancel_height_sw600dp_land">90dp</dimen>
+    <dimen name="btn_logout_width_sw600dp_land">80dp</dimen>
+    <dimen name="btn_logout_height_sw600dp_land">80dp</dimen>
+
+    <!--Size Notification-->
+    <!--layout_normal-->
+    <dimen name="layout_activity_width">250dp</dimen>
+    <!--layout_sw480dp-->
+    <dimen name="layout_activity_width_sw480dp">300dp</dimen>
+    <!--layout_sw600dp-->
+    <dimen name="layout_activity_width_sw600dp">350dp</dimen>
+
+    <!--Size Logo Notification-->
+    <!--layout_normal-->
+    <dimen name="logo_notification_width">50dp</dimen>
+    <dimen name="logo_notification_height">35dp</dimen>
+    <!--layout_sw480dp-->
+    <dimen name="logo_notification_width_sw480dp">60dp</dimen>
+    <dimen name="logo_notification_height_sw480dp">45dp</dimen>
+    <!--layout_sw600dp-->
+    <dimen name="logo_logo_notification_width_sw600dp">80dp</dimen>
+    <dimen name="logo_logo_notification_height_sw600dp">60dp</dimen>
+
+
+
+    <!--&lt;!&ndash;layout_sw800dp&ndash;&gt;-->
+    <!--&lt;!&ndash;logo in Login&ndash;&gt;-->
+    <!--<dimen name="logo_width_sw800dp">380dp</dimen>-->
+    <!--<dimen name="logo_height_sw800dp">380dp</dimen>-->
+    <!--&lt;!&ndash;button in Login&ndash;&gt;-->
+    <!--<dimen name="icon_width_sw800dp">80dp</dimen>-->
+    <!--<dimen name="icon_height_sw800dp">80dp</dimen>-->
+    <!--&lt;!&ndash;button in Logout&ndash;&gt;-->
+    <!--<dimen name="btn_cancel_width_sw800dp">80dp</dimen>-->
+    <!--<dimen name="btn_cancel_height_sw800dp">80dp</dimen>-->
+    <!--<dimen name="btn_logout_width_sw800dp">70dp</dimen>-->
+    <!--<dimen name="btn_logout_height_sw800dp">70dp</dimen>-->
+</resources>
