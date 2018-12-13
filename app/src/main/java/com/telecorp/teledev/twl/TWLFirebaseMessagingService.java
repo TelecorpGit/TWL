@@ -23,11 +23,12 @@ import java.util.Map;
 public class TWLFirebaseMessagingService extends FirebaseMessagingService {
 
     public String dataEntry;
-    String txtTitle;
-    String txtBody;
-    String txtRefrigUID ,customLink;
-    String txtCode;
+    public String txtTitle;
+    public String txtBody;
+    public String txtRefrigUID ,customLink;
+    public String txtCode;
     public String content;
+    public String txtType;
 
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
     @Override
@@ -48,23 +49,30 @@ public class TWLFirebaseMessagingService extends FirebaseMessagingService {
             customLink = data.get("link");
             txtRefrigUID = data.get("RefrigUID");
             txtCode = data.get("code");
+            txtType = data.get("type");
 
             workingOn();
         }
     }
 
     private void workingOn() {
-        sendNotification(txtTitle, txtBody ,customLink,txtRefrigUID, txtCode);
-        dialogMessage(txtTitle, txtBody ,customLink,txtRefrigUID, txtCode);
+        if (txtType.equals("Emergency")){
+            dialogMessage(txtTitle, txtBody ,customLink,txtRefrigUID, txtCode, txtType);
+            sendNotification(txtTitle, txtBody ,customLink,txtRefrigUID, txtCode);
+        }else {
+            sendNotification(txtTitle, txtBody ,customLink,txtRefrigUID, txtCode);
+        }
+
     }
 
-    private void dialogMessage(String txtTitle, String txtBody, String customLink, String txtRefrigUID, String txtCode) {
+    private void dialogMessage(String txtTitle, String txtBody, String customLink, String txtRefrigUID, String txtCode, String txtType) {
         Intent intent = new Intent(this, DialogActivity.class);
         intent.putExtra("title", txtTitle);
         intent.putExtra("body",txtBody);
         intent.putExtra("link", customLink);
         intent.putExtra("RefrigUID", txtRefrigUID);
         intent.putExtra("code", txtCode);
+        intent.putExtra("type", txtType);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
 

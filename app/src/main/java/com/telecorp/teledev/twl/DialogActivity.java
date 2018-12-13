@@ -19,6 +19,7 @@ public class DialogActivity extends Activity {
     private String msgLink;
     private String msgRefrigUID;
     private String msgCode;
+    private String msgType;
     private int statusSound;
     private MediaPlayer mediaPlayer;
     private Dialog dialog;
@@ -34,6 +35,7 @@ public class DialogActivity extends Activity {
         msgLink = getIntent().getStringExtra("link");
         msgRefrigUID = getIntent().getStringExtra("RefrigUID");
         msgCode = getIntent().getStringExtra("code");
+        msgType = getIntent().getStringExtra("type");
 
         SharedPreferences shCheckSound = getSharedPreferences("STATUS_SOUND",MODE_PRIVATE);
         statusSound = shCheckSound.getInt("firstTime", 0);

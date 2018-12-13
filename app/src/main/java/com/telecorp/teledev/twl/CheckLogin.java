@@ -77,21 +77,30 @@ public class CheckLogin extends Activity {
         edClear.clear();
         edClear.commit();
 
-        if (shReCheckbox == true){
-            loadingDialog = ProgressDialog.show(CheckLogin.this,"จดจำการเข้าสู่ระบบ !",
-                    "กำลังเข้าสู่ระบบ, กรุณารอสักครู่...", false, false);
-            LoginAuto(shReUsername, shRePassword);
+        loadingDialog = ProgressDialog.show(CheckLogin.this, "จดจำการเข้าสู่ระบบ !",
+                "กำลังเข้าสู่ระบบ, กรุณารอสักครู่...", false, false);
 
-        }else {
-            if (checkLogin == 1){
-                if (checkUsername != "" && checkPassword != ""){
-                    loadingDialog = ProgressDialog.show(CheckLogin.this,"คุณเคยเข้าสู่ระบบไว้แล้ว !",
-                            "กำลังเข้าสู่ระบบ, กรุณารอสักครู่...", false, false);
-                    LoginAuto(checkUsername, checkPassword);
+        if (checkLogin == 1) {
+            if (shReCheckbox == true) {
+//                loadingDialog = ProgressDialog.show(CheckLogin.this, "จดจำการเข้าสู่ระบบ !",
+//                        "กำลังเข้าสู่ระบบ, กรุณารอสักครู่...", false, false);
+                LoginAuto(shReUsername, shRePassword);
+
+            } else {
+                if (checkLogin == 1) {
+                    if (checkUsername != "" && checkPassword != "") {
+//                        loadingDialog = ProgressDialog.show(CheckLogin.this, "คุณเคยเข้าสู่ระบบไว้แล้ว !",
+//                                "กำลังเข้าสู่ระบบ, กรุณารอสักครู่...", false, false);
+                        LoginAuto(checkUsername, checkPassword);
+                    }else {
+                        Intent iLogin = new Intent(this, LoginActivity.class);
+                        startActivity(iLogin);
+                    }
                 }
-            }else {
-
             }
+        }else {
+            Intent iLogin = new Intent(this, LoginActivity.class);
+            startActivity(iLogin);
         }
 
 
